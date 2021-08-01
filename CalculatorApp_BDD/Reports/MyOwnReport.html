@@ -34,7 +34,8 @@
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
-						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
+						<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
+			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
 		</ul>
 		<!-- report name -->
 		<span class='report-name'>Automation Test Report</span>
@@ -43,7 +44,7 @@
 		<!-- nav-right -->
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<a href='#!'>
-			<span class='label blue darken-3 suite-start-time'>Aug 1, 2021 10:12:54 AM</span>
+			<span class='label blue darken-3 suite-start-time'>Aug 1, 2021 03:30:37 PM</span>
 			</a>
 		</ul>
 	</div>
@@ -59,6 +60,7 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 										<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
+					<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -101,10 +103,10 @@
                     <canvas id='parent-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> feature(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='96.667%'><span class='strong'>29</span> feature(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='3.333%'>1</span> feature(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
             </div>
         </div>
@@ -115,10 +117,10 @@
                     <canvas id='child-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> scenario(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='96.667%'><span class='strong'>29</span> scenario(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='3.333%'>1</span> scenario(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
             </div>
         </div>
@@ -129,10 +131,10 @@
                     <canvas id='grandchild-analysis' width='90' height='70'></canvas>
                 </div>
                 <div class='block text-small'>
-                    <span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>4</span> step(s) passed</span>
+                    <span class='tooltipped' data-position='top' data-tooltip='99.167%'><span class='strong'>119</span> step(s) passed</span>
                 </div>
                 <div class='block text-small'>
-                    <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                    <span class='strong tooltipped' data-position='top' data-tooltip='0.833%'>1</span> step(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
                 </div>
             </div>
         </div>
@@ -152,8 +154,8 @@
 			<ul id='test-collection' class='test-collection'>
 				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Test_Division</span>
-						<span class='test-time'>Aug 1, 2021 10:12:59 AM</span>
+						<span class='test-name'>Test_Addition</span>
+						<span class='test-time'>Aug 1, 2021 03:30:41 PM</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
@@ -166,39 +168,1659 @@
 <div class='scenario node' test-id='2' status='pass'>
     <span class='duration right label'>0h 0m 0s+0ms</span>
     <div class="bdd-test">
-        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Divide lower value from higher value for Single unit number</div>
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Add for more than two integers</div>
     </div>
     <ul class='steps'>
         <li test-id='3' class='node given pass' status='pass'>
             <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Launch Application</div>
             <ul class='screenshots right'>
-                <li><a data-featherlight="image" href="C:\Users\SSathya\eclipse-workspace\CalculatorApp_BDD\Reports\scnshot_08012021101300646.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153043210.png"><i class='material-icons'>panorama</i></a></li>
             </ul>
                 <div class="node-step">Application successfully launched</div>
         </li>
         <li test-id='4' class='node given pass' status='pass'>
             <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Calculator Page</div>
             <ul class='screenshots right'>
-                <li><a data-featherlight="image" href="C:\Users\SSathya\eclipse-workspace\CalculatorApp_BDD\Reports\scnshot_08012021101301271.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153043796.png"><i class='material-icons'>panorama</i></a></li>
             </ul>
                 <div class="node-step">Calculator Application page is displayed</div>
         </li>
         <li test-id='5' class='node given pass' status='pass'>
-            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>I Enter values for Subtraction</div>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>I Enter values for Additioncalculation from left to right. Mu=y values : 9,2,10</div>
             <ul class='screenshots right'>
-                <li><a data-featherlight="image" href="C:\Users\SSathya\eclipse-workspace\CalculatorApp_BDD\Reports\scnshot_08012021101304062.png"><i class='material-icons'>panorama</i></a></li>
-                <li><a data-featherlight="image" href="C:\Users\SSathya\eclipse-workspace\CalculatorApp_BDD\Reports\scnshot_08012021101307073.png"><i class='material-icons'>panorama</i></a></li>
-                <li><a data-featherlight="image" href="C:\Users\SSathya\eclipse-workspace\CalculatorApp_BDD\Reports\scnshot_08012021101308649.png"><i class='material-icons'>panorama</i></a></li>
-                <li><a data-featherlight="image" href="C:\Users\SSathya\eclipse-workspace\CalculatorApp_BDD\Reports\scnshot_08012021101311452.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153046593.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153049394.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153050974.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153053805.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153059829.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153103220.png"><i class='material-icons'>panorama</i></a></li>
             </ul>
-                <div class="node-step">Calculator Application is displayed</div>
+                <div class="node-step">Addition calculation is performed</div>
         </li>
         <li test-id='6' class='node given pass' status='pass'>
             <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Result</div>
             <ul class='screenshots right'>
-                <li><a data-featherlight="image" href="C:\Users\SSathya\eclipse-workspace\CalculatorApp_BDD\Reports\scnshot_08012021101317046.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153104726.png"><i class='material-icons'>panorama</i></a></li>
             </ul>
-                <div class="node-step">Result matches successfully</div>
+                <div class="node-step">Expected Result : 21 matches successfully with Actual result : 21</div>
+        </li>
+    </ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='7'>
+					<div class='test-heading'>
+						<span class='test-name'>Test_Addition</span>
+						<span class='test-time'>Aug 1, 2021 03:31:08 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+    <a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+    <a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+    <a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+    <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+<div class='scenario node' test-id='8' status='pass'>
+    <span class='duration right label'>0h 0m 0s+0ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Add two maximum integer</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='9' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Launch Application</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153110168.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Application successfully launched</div>
+        </li>
+        <li test-id='10' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Calculator Page</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153110589.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Calculator Application page is displayed</div>
+        </li>
+        <li test-id='11' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>I Enter values for Additionvalue1 :999999999, value2 :999999999</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153134290.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153137578.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153203575.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153206779.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">AdditionCalculation is Performaed</div>
+        </li>
+        <li test-id='12' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Result</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153208294.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Expected Result : 2e+9 matches successfully with Actual result : 2e+9</div>
+        </li>
+    </ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='13'>
+					<div class='test-heading'>
+						<span class='test-name'>Test_Addition</span>
+						<span class='test-time'>Aug 1, 2021 03:32:11 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+    <a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+    <a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+    <a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+    <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+<div class='scenario node' test-id='14' status='pass'>
+    <span class='duration right label'>0h 0m 0s+0ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Add lower value and higher value for Single unit number</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='15' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Launch Application</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153213187.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Application successfully launched</div>
+        </li>
+        <li test-id='16' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Calculator Page</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153213587.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Calculator Application page is displayed</div>
+        </li>
+        <li test-id='17' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>I Enter values for Additionvalue1 :2, value2 :5</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153215134.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153217881.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153219431.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153222559.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">AdditionCalculation is Performaed</div>
+        </li>
+        <li test-id='18' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Result</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153223970.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Expected Result : 7 matches successfully with Actual result : 7</div>
+        </li>
+    </ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='19'>
+					<div class='test-heading'>
+						<span class='test-name'>Test_Addition</span>
+						<span class='test-time'>Aug 1, 2021 03:32:27 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+    <a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+    <a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+    <a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+    <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+<div class='scenario node' test-id='20' status='pass'>
+    <span class='duration right label'>0h 0m 0s+0ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Add higher value and lower value for Single unit number</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='21' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Launch Application</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153229080.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Application successfully launched</div>
+        </li>
+        <li test-id='22' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Calculator Page</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153229493.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Calculator Application page is displayed</div>
+        </li>
+        <li test-id='23' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>I Enter values for Additionvalue1 :3, value2 :5</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153231054.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153234022.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153235556.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153238380.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">AdditionCalculation is Performaed</div>
+        </li>
+        <li test-id='24' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Result</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153239779.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Expected Result : 8 matches successfully with Actual result : 8</div>
+        </li>
+    </ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='25'>
+					<div class='test-heading'>
+						<span class='test-name'>Test_Addition</span>
+						<span class='test-time'>Aug 1, 2021 03:32:43 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+    <a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+    <a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+    <a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+    <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+<div class='scenario node' test-id='26' status='pass'>
+    <span class='duration right label'>0h 0m 0s+1ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Add lower value and higher value for number greater than single unit</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='27' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Launch Application</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153244568.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Application successfully launched</div>
+        </li>
+        <li test-id='28' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Calculator Page</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153244993.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Calculator Application page is displayed</div>
+        </li>
+        <li test-id='29' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>I Enter values for Additionvalue1 :10, value2 :220</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153250150.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153252835.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153301041.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153304460.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">AdditionCalculation is Performaed</div>
+        </li>
+        <li test-id='30' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Result</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153305933.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Expected Result : 230 matches successfully with Actual result : 230</div>
+        </li>
+    </ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='31'>
+					<div class='test-heading'>
+						<span class='test-name'>Test_Addition</span>
+						<span class='test-time'>Aug 1, 2021 03:33:09 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+    <a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+    <a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+    <a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+    <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+<div class='scenario node' test-id='32' status='pass'>
+    <span class='duration right label'>0h 0m 0s+0ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Add higher value and lower value for number greater than single unit</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='33' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Launch Application</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153310698.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Application successfully launched</div>
+        </li>
+        <li test-id='34' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Calculator Page</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153311154.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Calculator Application page is displayed</div>
+        </li>
+        <li test-id='35' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>I Enter values for Additionvalue1 :550, value2 :20</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153318516.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153321238.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153327242.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153330572.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">AdditionCalculation is Performaed</div>
+        </li>
+        <li test-id='36' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Result</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153332106.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Expected Result : 570 matches successfully with Actual result : 570</div>
+        </li>
+    </ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='37'>
+					<div class='test-heading'>
+						<span class='test-name'>Test_Addition</span>
+						<span class='test-time'>Aug 1, 2021 03:33:35 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+    <a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+    <a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+    <a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+    <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+<div class='scenario node' test-id='38' status='pass'>
+    <span class='duration right label'>0h 0m 0s+0ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Add higher negative value and lower positive value</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='39' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Launch Application</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153336481.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Application successfully launched</div>
+        </li>
+        <li test-id='40' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Calculator Page</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153336901.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Calculator Application page is displayed</div>
+        </li>
+        <li test-id='41' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>I Enter values for Additionvalue1 :-550, value2 :20</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153346855.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153349899.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153356019.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153359294.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">AdditionCalculation is Performaed</div>
+        </li>
+        <li test-id='42' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Result</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153400738.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Expected Result : -530 matches successfully with Actual result : -530</div>
+        </li>
+    </ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='43'>
+					<div class='test-heading'>
+						<span class='test-name'>Test_Addition</span>
+						<span class='test-time'>Aug 1, 2021 03:34:04 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+    <a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+    <a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+    <a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+    <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+<div class='scenario node' test-id='44' status='pass'>
+    <span class='duration right label'>0h 0m 0s+0ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Add lower negative value1 with higher positive value2</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='45' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Launch Application</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153405339.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Application successfully launched</div>
+        </li>
+        <li test-id='46' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Calculator Page</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153405748.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Calculator Application page is displayed</div>
+        </li>
+        <li test-id='47' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>I Enter values for Additionvalue1 :-10, value2 :20</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153413162.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153415987.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153421991.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153425219.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">AdditionCalculation is Performaed</div>
+        </li>
+        <li test-id='48' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Result</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153426727.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Expected Result : 10 matches successfully with Actual result : 10</div>
+        </li>
+    </ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf fail' status='fail' bdd='true' test-id='49'>
+					<div class='test-heading'>
+						<span class='test-name'>Test_Addition</span>
+						<span class='test-time'>Aug 1, 2021 03:34:30 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+    <a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+    <a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+    <a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+    <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+<div class='scenario node' test-id='50' status='fail'>
+    <span class='duration right label'>0h 0m 0s+0ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span> Scenario: Add lower value from higher value with decimal point</div>
+        <ul class='screenshots right'>
+            <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153457816.png"><i class='material-icons'>panorama</i></a></li>
+        </ul>
+    </div>
+    <ul class='steps'>
+        <li test-id='51' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Launch Application</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153433350.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Application successfully launched</div>
+        </li>
+        <li test-id='52' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Calculator Page</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153433721.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Calculator Application page is displayed</div>
+        </li>
+        <li test-id='53' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>I Enter values for Additionvalue1 :5.5, value2 :2.4</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153441265.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153444056.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153452942.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153456336.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">AdditionCalculation is Performaed</div>
+        </li>
+        <li test-id='54' class='node given fail' status='fail'>
+            <div class="step-name"><span class='status fail' title='fail'><i class='material-icons'>cancel</i></span>Verify Result</div>
+                <div class="node-step"><span class='badge white-text red'>Test case is Failed</span></div>
+                <textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
+	at Listners.ExtentReportListeners.testStepHandle(ExtentReportListeners.java:49)
+	at StepDef.Steps_OnlineCalculator.i_verify_the_end_result(Steps_OnlineCalculator.java:93)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:49)
+	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:63)
+	at cucumber.runner.TestStep.run(TestStep.java:49)
+	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
+	at cucumber.runner.TestCase.run(TestCase.java:44)
+	at cucumber.runner.Runner.runPickle(Runner.java:40)
+	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:68)
+	at TestRunner.TestRunner.feature(TestRunner.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</textarea>
+        </li>
+    </ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='55'>
+					<div class='test-heading'>
+						<span class='test-name'>Test_Addition</span>
+						<span class='test-time'>Aug 1, 2021 03:35:01 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+    <a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+    <a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+    <a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+    <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+<div class='scenario node' test-id='56' status='pass'>
+    <span class='duration right label'>0h 0m 0s+0ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Add higher value and lower value with decimal point</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='57' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Launch Application</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153502534.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Application successfully launched</div>
+        </li>
+        <li test-id='58' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Calculator Page</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153502935.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Calculator Application page is displayed</div>
+        </li>
+        <li test-id='59' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>I Enter values for Additionvalue1 :3.5, value2 :1.5</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153510394.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153513177.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153521884.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153525205.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">AdditionCalculation is Performaed</div>
+        </li>
+        <li test-id='60' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Result</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153526711.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Expected Result : 5 matches successfully with Actual result : 5</div>
+        </li>
+    </ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='61'>
+					<div class='test-heading'>
+						<span class='test-name'>Test_Addition</span>
+						<span class='test-time'>Aug 1, 2021 03:35:30 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+    <a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+    <a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+    <a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+    <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+<div class='scenario node' test-id='62' status='pass'>
+    <span class='duration right label'>0h 0m 0s+0ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Verify multiple decimal point not allowed in Addition</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='63' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Launch Application</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153531218.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Application successfully launched</div>
+        </li>
+        <li test-id='64' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Calculator Page</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153531596.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Calculator Application page is displayed</div>
+        </li>
+        <li test-id='65' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>I Enter values for Additionvalue1 :2.6.1, value2 :1.5.5</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153544136.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153547513.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153602182.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153605704.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">AdditionCalculation is Performaed</div>
+        </li>
+        <li test-id='66' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Result</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153607147.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Expected Result : 4.16 matches successfully with Actual result : 4.16</div>
+        </li>
+    </ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='67'>
+					<div class='test-heading'>
+						<span class='test-name'>Test_Division</span>
+						<span class='test-time'>Aug 1, 2021 03:36:11 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+    <a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+    <a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+    <a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+    <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+<div class='scenario node' test-id='68' status='pass'>
+    <span class='duration right label'>0h 0m 0s+0ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Verify Error message when any value divide by zero</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='69' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Launch Application</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153612550.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Application successfully launched</div>
+        </li>
+        <li test-id='70' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Calculator Page</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153612980.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Calculator Application page is displayed</div>
+        </li>
+        <li test-id='71' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>I Enter values for Divisionvalue1 :9, value2 :0</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153614539.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153617366.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153618917.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153621728.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">DivisionCalculation is Performaed</div>
+        </li>
+        <li test-id='72' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Result</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153623120.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Expected Result : Error matches successfully with Actual result : Error</div>
+        </li>
+    </ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='73'>
+					<div class='test-heading'>
+						<span class='test-name'>Test_Division</span>
+						<span class='test-time'>Aug 1, 2021 03:36:26 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+    <a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+    <a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+    <a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+    <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+<div class='scenario node' test-id='74' status='pass'>
+    <span class='duration right label'>0h 0m 0s+0ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Divide for more than two integers</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='75' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Launch Application</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153628202.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Application successfully launched</div>
+        </li>
+        <li test-id='76' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Calculator Page</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153628589.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Calculator Application page is displayed</div>
+        </li>
+        <li test-id='77' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>I Enter values for Divisioncalculation from left to right. Mu=y values : 9,3,3</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153630179.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153632931.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153634538.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153637417.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153638936.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153642194.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Division calculation is performed</div>
+        </li>
+        <li test-id='78' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Result</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153643692.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Expected Result : 1 matches successfully with Actual result : 1</div>
+        </li>
+    </ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='79'>
+					<div class='test-heading'>
+						<span class='test-name'>Test_Division</span>
+						<span class='test-time'>Aug 1, 2021 03:36:47 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+    <a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+    <a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+    <a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+    <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+<div class='scenario node' test-id='80' status='pass'>
+    <span class='duration right label'>0h 0m 0s+0ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Divide lower value by higher value for Single unit number</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='81' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Launch Application</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153648519.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Application successfully launched</div>
+        </li>
+        <li test-id='82' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Calculator Page</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153648902.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Calculator Application page is displayed</div>
+        </li>
+        <li test-id='83' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>I Enter values for Divisionvalue1 :2, value2 :5</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153650462.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153653192.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153654710.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153657550.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">DivisionCalculation is Performaed</div>
+        </li>
+        <li test-id='84' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Result</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153658969.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Expected Result : 0.4 matches successfully with Actual result : 0.4</div>
+        </li>
+    </ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='85'>
+					<div class='test-heading'>
+						<span class='test-name'>Test_Division</span>
+						<span class='test-time'>Aug 1, 2021 03:37:02 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+    <a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+    <a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+    <a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+    <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+<div class='scenario node' test-id='86' status='pass'>
+    <span class='duration right label'>0h 0m 0s+0ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Divide higher value by lower value for Single unit number</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='87' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Launch Application</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153703589.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Application successfully launched</div>
+        </li>
+        <li test-id='88' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Calculator Page</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153704020.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Calculator Application page is displayed</div>
+        </li>
+        <li test-id='89' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>I Enter values for Divisionvalue1 :5, value2 :2</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153705601.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153708351.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153709827.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153712729.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">DivisionCalculation is Performaed</div>
+        </li>
+        <li test-id='90' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Result</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153714132.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Expected Result : 2.5 matches successfully with Actual result : 2.5</div>
+        </li>
+    </ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='91'>
+					<div class='test-heading'>
+						<span class='test-name'>Test_Division</span>
+						<span class='test-time'>Aug 1, 2021 03:37:17 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+    <a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+    <a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+    <a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+    <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+<div class='scenario node' test-id='92' status='pass'>
+    <span class='duration right label'>0h 0m 0s+0ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Divide lower value by higher value for number greater than single unit</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='93' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Launch Application</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153718868.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Application successfully launched</div>
+        </li>
+        <li test-id='94' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Calculator Page</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153719273.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Calculator Application page is displayed</div>
+        </li>
+        <li test-id='95' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>I Enter values for Divisionvalue1 :20, value2 :80</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153724549.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153727421.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153733008.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153736317.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">DivisionCalculation is Performaed</div>
+        </li>
+        <li test-id='96' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Result</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153737779.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Expected Result : 0.25 matches successfully with Actual result : 0.25</div>
+        </li>
+    </ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='97'>
+					<div class='test-heading'>
+						<span class='test-name'>Test_Division</span>
+						<span class='test-time'>Aug 1, 2021 03:37:41 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+    <a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+    <a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+    <a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+    <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+<div class='scenario node' test-id='98' status='pass'>
+    <span class='duration right label'>0h 0m 0s+0ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Divide higher value by lower value for number greater than single unit</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='99' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Launch Application</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153742571.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Application successfully launched</div>
+        </li>
+        <li test-id='100' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Calculator Page</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153742966.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Calculator Application page is displayed</div>
+        </li>
+        <li test-id='101' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>I Enter values for Divisionvalue1 :80, value2 :20</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153748064.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153750913.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153756568.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153759774.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">DivisionCalculation is Performaed</div>
+        </li>
+        <li test-id='102' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Result</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153801214.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Expected Result : 4 matches successfully with Actual result : 4</div>
+        </li>
+    </ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='103'>
+					<div class='test-heading'>
+						<span class='test-name'>Test_Division</span>
+						<span class='test-time'>Aug 1, 2021 03:38:05 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+    <a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+    <a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+    <a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+    <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+<div class='scenario node' test-id='104' status='pass'>
+    <span class='duration right label'>0h 0m 0s+0ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Divide lower value by higher value with decimal point</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='105' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Launch Application</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153806517.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Application successfully launched</div>
+        </li>
+        <li test-id='106' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Calculator Page</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153806889.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Calculator Application page is displayed</div>
+        </li>
+        <li test-id='107' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>I Enter values for Divisionvalue1 :2.5, value2 :5.5</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153814231.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153817082.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153825815.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153829297.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">DivisionCalculation is Performaed</div>
+        </li>
+        <li test-id='108' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Result</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153830823.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Expected Result : 0.45454546 matches successfully with Actual result : 0.45454546</div>
+        </li>
+    </ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='109'>
+					<div class='test-heading'>
+						<span class='test-name'>Test_Division</span>
+						<span class='test-time'>Aug 1, 2021 03:38:34 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+    <a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+    <a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+    <a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+    <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+<div class='scenario node' test-id='110' status='pass'>
+    <span class='duration right label'>0h 0m 0s+0ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Divide higher value by lower value with decimal point</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='111' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Launch Application</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153835741.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Application successfully launched</div>
+        </li>
+        <li test-id='112' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Calculator Page</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153836124.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Calculator Application page is displayed</div>
+        </li>
+        <li test-id='113' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>I Enter values for Divisionvalue1 :3.5, value2 :1.5</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153843636.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153846488.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153855461.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153858800.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">DivisionCalculation is Performaed</div>
+        </li>
+        <li test-id='114' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Result</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153900313.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Expected Result : 2.33333333 matches successfully with Actual result : 2.33333333</div>
+        </li>
+    </ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='115'>
+					<div class='test-heading'>
+						<span class='test-name'>Test_Division</span>
+						<span class='test-time'>Aug 1, 2021 03:39:04 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+    <a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+    <a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+    <a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+    <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+<div class='scenario node' test-id='116' status='pass'>
+    <span class='duration right label'>0h 0m 0s+0ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Verify multiple decimal point not allowed on Division</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='117' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Launch Application</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153905639.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Application successfully launched</div>
+        </li>
+        <li test-id='118' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Calculator Page</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153906071.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Calculator Application page is displayed</div>
+        </li>
+        <li test-id='119' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>I Enter values for Divisionvalue1 :5.5.5, value2 :5</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153918343.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153921822.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153923678.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153926988.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">DivisionCalculation is Performaed</div>
+        </li>
+        <li test-id='120' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Result</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153928553.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Expected Result : 1.11 matches successfully with Actual result : 1.11</div>
+        </li>
+    </ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='121'>
+					<div class='test-heading'>
+						<span class='test-name'>Test_Division</span>
+						<span class='test-time'>Aug 1, 2021 03:39:32 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+    <a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+    <a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+    <a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+    <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+<div class='scenario node' test-id='122' status='pass'>
+    <span class='duration right label'>0h 0m 0s+0ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Divide Negative Integer value</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='123' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Launch Application</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153933274.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Application successfully launched</div>
+        </li>
+        <li test-id='124' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Calculator Page</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153933666.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Calculator Application page is displayed</div>
+        </li>
+        <li test-id='125' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>I Enter values for Divisionvalue1 :-6, value2 :3</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153938895.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153941633.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153943125.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153946136.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">DivisionCalculation is Performaed</div>
+        </li>
+        <li test-id='126' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Result</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153947602.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Expected Result : -2 matches successfully with Actual result : -2</div>
+        </li>
+    </ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='127'>
+					<div class='test-heading'>
+						<span class='test-name'>Test_Division</span>
+						<span class='test-time'>Aug 1, 2021 03:39:50 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+    <a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+    <a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+    <a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+    <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+<div class='scenario node' test-id='128' status='pass'>
+    <span class='duration right label'>0h 0m 0s+0ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Divide zero by any interger</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='129' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Launch Application</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153952234.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Application successfully launched</div>
+        </li>
+        <li test-id='130' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Calculator Page</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153952673.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Calculator Application page is displayed</div>
+        </li>
+        <li test-id='131' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>I Enter values for Divisionvalue1 :0, value2 :9</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153954405.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153957168.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021153958786.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154001683.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">DivisionCalculation is Performaed</div>
+        </li>
+        <li test-id='132' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Result</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154003129.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Expected Result : 0 matches successfully with Actual result : 0</div>
+        </li>
+    </ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='133'>
+					<div class='test-heading'>
+						<span class='test-name'>Test_Subtraction</span>
+						<span class='test-time'>Aug 1, 2021 03:40:06 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+    <a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+    <a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+    <a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+    <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+<div class='scenario node' test-id='134' status='pass'>
+    <span class='duration right label'>0h 0m 0s+0ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Subtract lower value from higher value for Single unit number</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='135' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Launch Application</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154007845.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Application successfully launched</div>
+        </li>
+        <li test-id='136' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Calculator Page</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154008268.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Calculator Application page is displayed</div>
+        </li>
+        <li test-id='137' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>I Enter values for Subtractionvalue1 :5, value2 :2</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154009843.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154012548.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154014099.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154016967.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">SubtractionCalculation is Performaed</div>
+        </li>
+        <li test-id='138' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Result</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154018393.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Expected Result : 3 matches successfully with Actual result : 3</div>
+        </li>
+    </ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='139'>
+					<div class='test-heading'>
+						<span class='test-name'>Test_Subtraction</span>
+						<span class='test-time'>Aug 1, 2021 03:40:21 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+    <a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+    <a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+    <a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+    <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+<div class='scenario node' test-id='140' status='pass'>
+    <span class='duration right label'>0h 0m 0s+0ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Subtract higher value from lower value for Single unit number</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='141' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Launch Application</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154023046.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Application successfully launched</div>
+        </li>
+        <li test-id='142' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Calculator Page</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154023471.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Calculator Application page is displayed</div>
+        </li>
+        <li test-id='143' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>I Enter values for Subtractionvalue1 :3, value2 :5</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154025048.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154027777.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154029341.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154032219.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">SubtractionCalculation is Performaed</div>
+        </li>
+        <li test-id='144' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Result</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154033646.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Expected Result : -2 matches successfully with Actual result : -2</div>
+        </li>
+    </ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='145'>
+					<div class='test-heading'>
+						<span class='test-name'>Test_Subtraction</span>
+						<span class='test-time'>Aug 1, 2021 03:40:37 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+    <a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+    <a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+    <a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+    <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+<div class='scenario node' test-id='146' status='pass'>
+    <span class='duration right label'>0h 0m 0s+0ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Subtract higher value from lower value for number greater than single unit</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='147' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Launch Application</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154038640.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Application successfully launched</div>
+        </li>
+        <li test-id='148' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Calculator Page</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154039054.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Calculator Application page is displayed</div>
+        </li>
+        <li test-id='149' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>I Enter values for Subtractionvalue1 :10, value2 :22</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154044216.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154047046.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154052523.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154055870.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">SubtractionCalculation is Performaed</div>
+        </li>
+        <li test-id='150' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Result</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154057334.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Expected Result : -12 matches successfully with Actual result : -12</div>
+        </li>
+    </ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='151'>
+					<div class='test-heading'>
+						<span class='test-name'>Test_Subtraction</span>
+						<span class='test-time'>Aug 1, 2021 03:41:00 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+    <a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+    <a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+    <a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+    <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+<div class='scenario node' test-id='152' status='pass'>
+    <span class='duration right label'>0h 0m 0s+0ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Subtract lower value from higher value with decimal point</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='153' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Launch Application</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154102929.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Application successfully launched</div>
+        </li>
+        <li test-id='154' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Calculator Page</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154103314.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Calculator Application page is displayed</div>
+        </li>
+        <li test-id='155' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>I Enter values for Subtractionvalue1 :5.5, value2 :2.4</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154110860.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154113712.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154122663.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154125992.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">SubtractionCalculation is Performaed</div>
+        </li>
+        <li test-id='156' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Result</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154127481.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Expected Result : 3.1 matches successfully with Actual result : 3.1</div>
+        </li>
+    </ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='157'>
+					<div class='test-heading'>
+						<span class='test-name'>Test_Subtraction</span>
+						<span class='test-time'>Aug 1, 2021 03:41:30 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+    <a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+    <a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+    <a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+    <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+<div class='scenario node' test-id='158' status='pass'>
+    <span class='duration right label'>0h 0m 0s+0ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Subtract higher value from lower value with decimal point</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='159' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Launch Application</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154132350.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Application successfully launched</div>
+        </li>
+        <li test-id='160' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Calculator Page</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154132740.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Calculator Application page is displayed</div>
+        </li>
+        <li test-id='161' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>I Enter values for Subtractionvalue1 :1.5, value2 :3.5</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154140304.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154143115.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154152000.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154155404.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">SubtractionCalculation is Performaed</div>
+        </li>
+        <li test-id='162' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Result</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154156928.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Expected Result : -2 matches successfully with Actual result : -2</div>
+        </li>
+    </ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='163'>
+					<div class='test-heading'>
+						<span class='test-name'>Test_Subtraction</span>
+						<span class='test-time'>Aug 1, 2021 03:42:00 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+    <a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+    <a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+    <a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+    <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+<div class='scenario node' test-id='164' status='pass'>
+    <span class='duration right label'>0h 0m 0s+0ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Verify multiple decimal point not allowed on subtracting</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='165' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Launch Application</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154201910.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Application successfully launched</div>
+        </li>
+        <li test-id='166' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Calculator Page</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154202336.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Calculator Application page is displayed</div>
+        </li>
+        <li test-id='167' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>I Enter values for Subtractionvalue1 :2.6.1, value2 :1.5.5</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154214685.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154218001.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154232869.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154236175.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">SubtractionCalculation is Performaed</div>
+        </li>
+        <li test-id='168' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Result</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154237603.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Expected Result : 1.06 matches successfully with Actual result : 1.06</div>
+        </li>
+    </ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='169'>
+					<div class='test-heading'>
+						<span class='test-name'>Test_Subtraction</span>
+						<span class='test-time'>Aug 1, 2021 03:42:41 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+    <a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+    <a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+    <a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+    <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+<div class='scenario node' test-id='170' status='pass'>
+    <span class='duration right label'>0h 0m 0s+0ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Subtract for more than two integers</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='171' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Launch Application</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154242540.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Application successfully launched</div>
+        </li>
+        <li test-id='172' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Calculator Page</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154242950.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Calculator Application page is displayed</div>
+        </li>
+        <li test-id='173' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>I Enter values for Subtractioncalculation from left to right. Mu=y values : 9,2,1</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154244508.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154247281.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154248781.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154251765.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154253276.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154256701.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Subtraction calculation is performed</div>
+        </li>
+        <li test-id='174' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Result</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154258187.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Expected Result : 6 matches successfully with Actual result : 6</div>
+        </li>
+    </ul>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='true' test-id='175'>
+					<div class='test-heading'>
+						<span class='test-name'>Test_Subtraction</span>
+						<span class='test-time'>Aug 1, 2021 03:43:01 PM</span>
+						<span class='test-status right pass'>pass</span>
+					</div>
+					<div class='test-content hide'>
+<div class="sr-filters bdd-filters">
+    <a class="btn-floating waves-effect waves-light pass green" title="pass"><i class='material-icons'>check_circle</i></a>
+    <a class="btn-floating waves-effect waves-light fail red" title="fail"><i class='material-icons'>cancel</i></a>
+    <a class="btn-floating waves-effect waves-light skip blue" title="skip"><i class='material-icons'>redo</i></a>
+    <a class="btn-floating waves-effect waves-light clear grey" title="clear"><i class='material-icons'>clear</i></a>
+</div>
+<div class='scenario node' test-id='176' status='pass'>
+    <span class='duration right label'>0h 0m 0s+0ms</span>
+    <div class="bdd-test">
+        <div class="scenario-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span> Scenario: Subtract lower value from higher value for number greater than single unit</div>
+    </div>
+    <ul class='steps'>
+        <li test-id='177' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Launch Application</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154303250.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Application successfully launched</div>
+        </li>
+        <li test-id='178' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Calculator Page</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154303671.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Calculator Application page is displayed</div>
+        </li>
+        <li test-id='179' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>I Enter values for Subtractionvalue1 :50, value2 :22</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154308836.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154311695.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154317449.png"><i class='material-icons'>panorama</i></a></li>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154320836.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">SubtractionCalculation is Performaed</div>
+        </li>
+        <li test-id='180' class='node given pass' status='pass'>
+            <div class="step-name"><span class='status pass' title='pass'><i class='material-icons'>check_circle</i></span>Verify Result</div>
+            <ul class='screenshots right'>
+                <li><a data-featherlight="image" href="C:\Users\SSathya\git\Xendit_QA_Assignment\CalculatorApp_BDD\Reports\scnshot_08012021154322362.png"><i class='material-icons'>panorama</i></a></li>
+            </ul>
+                <div class="node-step">Expected Result : 28 matches successfully with Actual result : 28</div>
         </li>
     </ul>
 </div>
@@ -224,7 +1846,109 @@
 	</div>
 	<!-- subview right -->
 </div>
-<!-- test view --><!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
+<!-- test view --><!-- category view --><div id='exception-view' class='view hide'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='exception-collection' class='exception-collection'>
+				<li class='exception displayed active'>
+					<div class='exception-heading'>
+						<span class='exception-name'>java.lang.AssertionError</span>
+						<span class='exception-count right'><span class='label red lighten-1 white-text'>1</span></span>
+					</div>
+					<div class='exception-content hide'>
+						<div class='exception-tests'>
+							<table class='bordered table-results'>
+								<thead>
+									<tr>
+										<th>Timestamp</th>
+										<th>TestName</th>
+										<th>Status</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Aug 1, 2021 03:34:56 PM</td>
+										<td class='linked' test-id='54'>Test_Addition.Add lower value from higher value with decimal point.Verify Result</td>
+										<td>
+											<textarea disabled class="code-block">java.lang.AssertionError: expected [true] but found [false]
+	at Listners.ExtentReportListeners.testStepHandle(ExtentReportListeners.java:49)
+	at StepDef.Steps_OnlineCalculator.i_verify_the_end_result(Steps_OnlineCalculator.java:93)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at cucumber.runtime.Utils$1.call(Utils.java:26)
+	at cucumber.runtime.Timeout.timeout(Timeout.java:16)
+	at cucumber.runtime.Utils.invoke(Utils.java:20)
+	at cucumber.runtime.java.JavaStepDefinition.execute(JavaStepDefinition.java:49)
+	at cucumber.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:50)
+	at cucumber.runner.TestStep.executeStep(TestStep.java:63)
+	at cucumber.runner.TestStep.run(TestStep.java:49)
+	at cucumber.runner.PickleStepTestStep.run(PickleStepTestStep.java:43)
+	at cucumber.runner.TestCase.run(TestCase.java:44)
+	at cucumber.runner.Runner.runPickle(Runner.java:40)
+	at cucumber.api.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:68)
+	at TestRunner.TestRunner.feature(TestRunner.java:35)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</textarea>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<h5 class='exception-name'></h5>
+		</div>
+	</div>
+</div>
+<!-- exception view --><div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
 		<h5>Dashboard</h5>
 
@@ -232,37 +1956,37 @@
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Features
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>30</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Scenarios
-					<div class='panel-lead'>1</div>
+					<div class='panel-lead'>30</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Steps
-					<div class='panel-lead'>4</div>
+					<div class='panel-lead'>120</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Aug 1, 2021 10:12:54 AM</div>
+					<div class='panel-lead'>Aug 1, 2021 03:30:37 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Aug 1, 2021 10:13:17 AM</div>
+			 		<div class='panel-lead'>Aug 1, 2021 03:43:23 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>0h 0m 23s+468ms</div>
+					<div class='panel-lead'>0h 12m 46s+225ms</div>
 				</div>
 			</div>
 			<div class='col s4'>
@@ -297,39 +2021,39 @@
 		<!-- container -->
 		<script>
 			var statusGroup = {
-                parentCount: 1,
-				passParent: 1,
-				failParent: 0,
+                parentCount: 30,
+				passParent: 29,
+				failParent: 1,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 0,
-				childCount: 1,
-				passChild: 1,
-				failChild: 0,
+				exceptionsParent: 1,
+				childCount: 30,
+				passChild: 29,
+				failChild: 1,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
 				debugChild: 0,
-				exceptionsChild: 0,
-				grandChildCount: 4,
-				passGrandChild: 4,
-				failGrandChild: 0,
+				exceptionsChild: 1,
+				grandChildCount: 120,
+				passGrandChild: 119,
+				failGrandChild: 1,
 				fatalGrandChild: 0,
 				errorGrandChild: 0,
 				warningGrandChild: 0,
 				skipGrandChild: 0,
 				infoGrandChild: 0,
 				debugGrandChild: 0,
-				exceptionsGrandChild: 0,
+				exceptionsGrandChild: 1,
 			};
 		</script>
 		<script>
 			var timeline = {
-			        "Test_Division":0
+			        "Test_Addition":0,"Test_Addition":0,"Test_Addition":0,"Test_Addition":0,"Test_Addition":0,"Test_Addition":0.001,"Test_Addition":0,"Test_Addition":0.001,"Test_Addition":0,"Test_Addition":0,"Test_Addition":0,"Test_Division":0,"Test_Division":0,"Test_Division":0,"Test_Division":0,"Test_Division":0,"Test_Division":0,"Test_Division":0,"Test_Division":0,"Test_Division":0,"Test_Division":0,"Test_Division":0,"Test_Subtraction":0,"Test_Subtraction":0,"Test_Subtraction":0,"Test_Subtraction":0,"Test_Subtraction":0,"Test_Subtraction":0,"Test_Subtraction":0,"Test_Subtraction":0
 			};
 		</script>
 		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/c23457b/v3html/js/extent.js' type='text/javascript'></script>

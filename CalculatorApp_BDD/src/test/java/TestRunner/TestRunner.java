@@ -13,17 +13,9 @@ import cucumber.api.testng.TestNGCucumberRunner;
 @CucumberOptions(
 		features = "features",
 		glue = {"StepDef"},
-		tags = {"@Divide"},
-		/*
-		 * logical AND in tags -> Scenario which contains both the tags then it will execute
-		 * tags = {"@test1","@test2"}
-		 * logical OR in tags -> Scenario if any of the tags name is available then it will execute
-		 * tags = {"@test1,@test2"}
-		 * logical to ignore specific scenario with tags @test2 use tilt sign
-		 * tags = {"@test1","~@test2"}
-		 */
+		tags = {"@Add,@Divide,@Subtract"},
 		//plugin = {"pretty", "html:target/site/cucumber-pretty","json:target/cucumber.json"}, 
-		//Auto generated report from cucumber
+		//Auto generated report from cucumber - Since Extent reports are used default cucumber reports are commented
 		monochrome = true,
 		dryRun = false
 		)

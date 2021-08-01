@@ -18,7 +18,6 @@ public class Hooks extends ExtentReportListeners{
 	@Before
 	public void launch_Application(Scenario scenario) throws Exception {
 		try {
-			delete_Existing_ScreenShots();
 			
 			scenarioName = scenario.getName();
 			System.out.println("Name : " +scenario.getName());
@@ -42,8 +41,10 @@ public class Hooks extends ExtentReportListeners{
 	
 	@After
 	public void tear_Down() {
+		//extent.flush();
 		DriverFactory.getInstance().getDriver().quit();
 	}
+	
 	
 	public static void delete_Existing_ScreenShots() {
 		File f = new File(System.getProperty("user.dir")+"\\Reports");

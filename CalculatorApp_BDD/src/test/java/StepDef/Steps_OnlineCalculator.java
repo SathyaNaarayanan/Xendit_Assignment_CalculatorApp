@@ -59,7 +59,7 @@ public class Steps_OnlineCalculator extends ExtentReportListeners{
 	public void i_choose_operation_from(String operationType, String value1, String value2) {
 		ExtentTest logInfo = null;
 		try {
-			logInfo = test.createNode(new GherkinKeyword("Given"), "I Enter values for Subtraction");
+			logInfo = test.createNode(new GherkinKeyword("Given"), "I Enter values for "+operationType+ "value1 :"+value1+", value2 :"+value2);
 			
 			String mathSignature = Helper.get_Math_Operation_Sign(operationType);
 			Helper.on_Click_Key_Image(value1);
@@ -71,7 +71,7 @@ public class Steps_OnlineCalculator extends ExtentReportListeners{
 			Helper.on_Click_Operator_Image("Sign_Equals");
 			
 			logInfo.addScreenCaptureFromPath(captureScreenShot(DriverFactory.getInstance().getDriver()));
-			logInfo.pass("Calculator Application is displayed");
+			logInfo.pass(operationType+"Calculation is Performaed");
 		}
 		catch(AssertionError | Exception e) {
 			testStepHandle("FAIL", DriverFactory.getInstance().getDriver(), logInfo, e);
@@ -87,7 +87,38 @@ public class Steps_OnlineCalculator extends ExtentReportListeners{
 			Assert.assertTrue(Helper.verify_Output(DriverFactory.getInstance().getDriver(), expectedResult));
 			
 			logInfo.addScreenCaptureFromPath(captureScreenShot(DriverFactory.getInstance().getDriver()));
-			logInfo.pass("Result matches successfully");
+			logInfo.pass("Expected Result : "+expectedResult+" matches successfully with Actual result : "+Helper.actualValue);
+		}
+		catch(AssertionError | Exception e) {
+			testStepHandle("FAIL", DriverFactory.getInstance().getDriver(), logInfo, e);
+		}
+	}
+	
+	@When("I choose {string} operation for multiple integers {string}")
+	public void i_choose_operation_for_multiple_integers(String operationType, String values) {
+		ExtentTest logInfo = null;
+		try {
+			logInfo = test.createNode(new GherkinKeyword("Given"), "I Enter values for "+operationType+ "calculation from left to right. Mu=y values : "+values);
+			
+			String mathSignature = Helper.get_Math_Operation_Sign(operationType);
+			
+			String[] valueArray = values.split(",");
+			for(int i=0; i<=valueArray.length; i++) {
+				Helper.on_Click_Key_Image(valueArray[i]);
+				logInfo.addScreenCaptureFromPath(captureScreenShot(DriverFactory.getInstance().getDriver()));
+				
+				if(i == valueArray.length-1) {
+					break;
+				}
+				else {
+					Helper.on_Click_Operator_Image(mathSignature);
+					logInfo.addScreenCaptureFromPath(captureScreenShot(DriverFactory.getInstance().getDriver()));
+				}
+			}
+			Helper.on_Click_Operator_Image("Sign_Equals");
+			
+			logInfo.addScreenCaptureFromPath(captureScreenShot(DriverFactory.getInstance().getDriver()));
+			logInfo.pass(operationType+" calculation is performed");
 		}
 		catch(AssertionError | Exception e) {
 			testStepHandle("FAIL", DriverFactory.getInstance().getDriver(), logInfo, e);

@@ -11,8 +11,8 @@ import org.sikuli.script.Screen;
 
 public class Helper {
 	
-PropertyFileReader fileReader = new PropertyFileReader();
-	
+	PropertyFileReader fileReader = new PropertyFileReader();
+	public static String actualValue ;
 	public static String getValueFromPropertyFile(String key) {
 		Helper helper = new Helper();
 		String value = "";
@@ -50,6 +50,9 @@ PropertyFileReader fileReader = new PropertyFileReader();
 				if(i.equals(".")) {
 					i = "decimal";
 				}
+				if(i.equals("-")) {
+					i = "Sign_Minus";
+				}
 				s = new Screen();
 				Pattern image = new Pattern(System.getProperty("user.dir")+"\\CalculatorKeys\\key_"+i+".png");
 				s.wait(image, 2000);
@@ -67,9 +70,9 @@ PropertyFileReader fileReader = new PropertyFileReader();
 	}
 	
 	public static Boolean verify_Output(WebDriver driver, String expectedValue) throws InterruptedException {
-		Thread.sleep(5000);
+		Thread.sleep(1000);
 		JavascriptExecutor js = (JavascriptExecutor)driver;
-		String actualValue = (String) js.executeScript("return window.exportRoot.showscreen_txt.text");
+		actualValue = (String) js.executeScript("return window.exportRoot.showscreen_txt.text");
 		System.out.println(actualValue);
 		return expectedValue.trim().equals(actualValue.trim());
 	}
